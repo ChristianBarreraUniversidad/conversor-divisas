@@ -1,0 +1,52 @@
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p {
+  text-align: center;
+  color: var(--ion-color-medium);
+  line-height: 1.5;
+}
+
+ion-item {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  --border-radius: 10px;
+  --background: var(--ion-color-light);
+}
+
+ion-button {
+  margin-top: 15px;
+  height: 48px;
+  --border-radius: 10px;
+  font-weight: 600;
+}
+
+ion-card {
+  margin-top: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+ion-card h1 {
+  color: var(--ion-color-success);
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.exchange-rate {
+  font-weight: 600;
+  color: var(--ion-color-primary);
+  font-size: 14px;
+  margin-top: 15px;
+}

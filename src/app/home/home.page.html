@@ -1,0 +1,50 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">DivisApp - 25004143</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="container">
+
+    <h1>Conversor de divisas</h1>
+
+    <p>
+      Ingresa la cantidad que deseas convertir
+      de quetzales a dólares.
+    </p>
+    <p class="exchange-rate">
+  Tasa de cambio: Q8.00 = $1.00
+</p>
+    <ion-item>
+      <ion-label position="stacked">
+        Cantidad en quetzales (Q)
+      </ion-label>
+
+      <ion-input
+        type="number"
+        min="0"
+        step="0.01"
+        placeholder="Ejemplo: 800"
+        (ionInput)="onAmountChange($event)">
+      </ion-input>
+    </ion-item>
+
+    <ion-button expand="block" (click)="convert()">
+      Convertir
+    </ion-button>
+
+    @if (convertedAmount !== null) {
+      <ion-card>
+        <ion-card-content>
+          <p>Equivalente en dólares:</p>
+          <h1>$ {{ convertedAmount.toFixed(2) }}</h1>
+        </ion-card-content>
+      </ion-card>
+    }
+
+  </div>
+
+</ion-content>
